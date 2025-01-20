@@ -1,0 +1,7 @@
+.main-animals {
+    padding: 2rem;
+    border: 2px dashed red;
+    list-style-type: "\1F431";
+    font-size: large;
+    font-weight: 700;
+}
