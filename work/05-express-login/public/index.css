@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-form {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1px solid #343434;
+    box-shadow: 2px 2px 4px #343434;
+    background-color: antiquewhite;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #343434;
+}
+
+.form-label {
+    margin-bottom: 1rem;
+}
+
+.label-name {
+    margin-right: 1rem;
+    font-weight: 700;
+    color: #343434;
+}
+
+.label-input {
+    padding: 0.25rem 0.5rem;
+}
+
+.error {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: red;
+}
+
+.form-submit {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    color: #343434;
+    background-color: lightgreen;
+}
+
+.form-submit:hover {
+    background-color: rgb(64, 139, 64);
+    transition: 0.25s background-color ease-in;
+}

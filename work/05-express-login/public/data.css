@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#data-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border: 4px dashed #343434;
+    background-color: aliceblue;
+}
+
+.logout-form {
+    grid-column: span 2;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logout-button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: #343434;
+    background-color: rgb(248, 106, 106);
+}
+
+.data-title {
+    grid-column: span 8;
+    padding: 2rem;
+    text-align: center;
+}
+
+.data-section {
+    grid-column: span 12;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px dotted #343434;
+    background-color: antiquewhite;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+}
+
+.word-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label {
+    padding: 2rem;
+}
+
+.label-name {
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.label-input {
+    padding: 0.25rem 0.5rem;
+}
+
+.update-button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    color: #343434;
+    background-color: lightgreen;
+}
+
+.update-button:hover {
+    background-color: rgb(64, 139, 64);
+    transition: 0.25s background-color ease-in;
+}
+
