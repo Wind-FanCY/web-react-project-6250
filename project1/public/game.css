@@ -1,0 +1,290 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 700px;
+}
+
+#game-page {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr;
+}
+
+.game-header {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 2px solid #343434;
+    background-color: antiquewhite;
+}
+
+.logout-form {
+    grid-column: span 2;
+}
+
+.form-logout {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    color: #343434;
+    background-color: lightcoral;
+}
+
+.form-logout:hover {
+    color: aliceblue;
+    background-color: brown;
+    transition: 0.3s color ease, 0.3s background-color ease;
+}
+
+.game-title {
+    grid-column: span 8;
+    padding: 2rem;
+    text-align: center;
+}
+
+.game-welcome {
+    grid-column: span 12;
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid #343434;
+}
+
+.username {
+    font-style: italic;
+    color: blueviolet;
+}
+
+.game-content {
+    grid-column: span 12;
+    padding: 2rem;
+    background-color: beige;
+}
+
+.user-status {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.status-title {
+    grid-column: span 12;
+    margin-bottom: 0.5rem;
+}
+
+.status-list {
+    grid-column: span 12;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px dashed #343434;
+    border-bottom: 2px dashed #343434;
+    background-color: aliceblue;
+}
+
+.status-item {
+    padding: 0.5rem 1rem;
+    border-left: 2px solid #343434;
+    border-right: 2px solid #343434;
+}
+
+.status-item:nth-child(2n) {
+    background-color: lightblue;
+}
+
+.status-item:nth-child(2n - 1) {
+    background-color: lightgreen;
+}
+
+.status-label {
+    margin-right: 0.5rem;
+}
+
+.status-value {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.game-status {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.status-count {
+    grid-column: span 6;
+    margin-left: 1rem;
+    padding: 0.5rem 0;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #343434;
+    background-color: aliceblue;
+}
+
+.status-last {
+    grid-column: span 6;
+    margin-right: 1rem;
+    padding: 0.5rem 0;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #343434;
+    background-color: aliceblue;
+}
+
+.game-win {
+    grid-column: span 12;
+    margin: 1rem 0 1rem 0;
+    border: 1px solid #343434;
+    border-radius: 1rem;
+    background-color:lightsalmon;
+}
+
+.win-title {
+    padding: 1rem;
+    text-align: center;
+}
+
+.win-form {
+    grid-column: span 12;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-new {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    color: #343434;
+    background-color: lightblue;
+}
+
+.form-new:hover {
+    color: aliceblue;
+    background-color: rgb(92, 115, 123);
+    transition: 0.3s color ease, 0.3s background-color ease;
+}
+
+.game-guess {
+    margin: 1rem 0 1rem 0;
+    border-radius: 1rem;
+    border: 1px solid #343434;
+    background-color: lightsalmon;
+}
+
+.guess-form {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label {
+    margin: 1rem 0 2rem 0;
+}
+
+.label-name {
+    font-weight: 700;
+    padding-right: 1rem;
+}
+
+.label-input {
+    padding: 0.25rem 0.5rem;
+}
+
+.form-guess {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    color: #343434;
+    background-color: lightblue;
+}
+
+.form-guess:hover {
+    color: aliceblue;
+    background-color: rgb(92, 115, 123);
+    transition: 0.3s color ease, 0.3s background-color ease;
+}
+
+.game-words {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.possible-words {
+    grid-column: span 6;
+}
+
+.words-title {
+    padding: 0.5rem 0;
+}
+
+.words-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.list-word {
+    grid-column: span 2;
+    padding: 0.5rem 0;
+    text-align: center;
+    border: 1px solid #343434;
+}
+
+.list-word:nth-child(3n) {
+    background-color: lightblue;
+}
+
+.list-word:nth-child(3n - 1) {
+    background-color: lightgreen;
+}
+
+.list-word:nth-child(3n - 2) {
+    background-color: lightcoral;
+}
+
+.previous-guesses {
+    grid-column: span 6;
+}
+
+.guesses-title {
+    padding: 0.5rem 0;
+}
+
+.guesses-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.guesses-words {
+    grid-column: span 4;
+    padding: 0.5rem 0;
+    text-align: center;
+    border: 1px solid #343434;
+}
+
+.guesses-words:nth-child(3n) {
+    background-color: lightblue;
+}
+
+.guesses-words:nth-child(3n - 1) {
+    background-color: lightgreen;
+}
+
+.guesses-words:nth-child(3n - 2) {
+    background-color: lightcoral;
+}
