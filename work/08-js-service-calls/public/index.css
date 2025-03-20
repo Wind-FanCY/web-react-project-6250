@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#app {
+    min-width: 40rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.app-title {
+    grid-column: span 12;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px dashed #343434;
+    background-color: antiquewhite;
+}
+
+#content {
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: red;
+}
+
+.login-container {
+    margin-top: 4rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #343434;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px #343434;
+    background-color: lightcyan;
+}
+
+.login-title {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-label {
+    margin: 2rem 0;
+}
+
+.label-name {
+    margin-right: 0.5rem;
+    font-weight: 700;
+}
+
+.label-input {
+    padding: 0.25rem 0.5rem;
+}
+
+.login-button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: lightgreen;
+}
+
+.word-container {
+    margin-top: 4rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #343434;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px #343434;
+    background-color: lightcyan;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.logout-button {
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: lightcoral;
+}
+
+.info-title {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.user-word {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.word-title {
+    margin-right: 0.5rem;
+}
+
+.word-content {
+    font-style: italic;
+    font-weight: 700;
+    color: blueviolet;
+}
+
+.word-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-label {
+    margin: 2rem 0;
+}
+
+.update-button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: lightblue;
+}
