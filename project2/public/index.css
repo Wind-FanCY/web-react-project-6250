@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.app {
+    min-width: 45rem;
+    height: 100dvh;
+}
+
+.main {
+    height: 100%;
+}
+
+.error {
+    display: inline-block;
+    max-width: 25rem;
+    padding: 0.5rem 0;
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: red;
+}
+
+.login {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 30rem;
+    padding: 2rem 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: 1px solid #343434;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px #343434;
+}
+
+.login-title {
+    padding: 2rem 0;
+}
+
+.login-label {
+    padding: 1rem 0;
+}
+
+.label-name {
+    padding-right: 0.5rem;
+    font-weight: 700;
+}
+
+.label-input {
+    padding: 0.25rem 0.5rem;
+}
+
+.login-button {
+    margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: lightgreen;
+}
+
+.chat-loading {
+    padding: 1rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.chat {
+    height: 100%;
+}
+
+.chat-header {
+    height: 8rem;
+    border-bottom: 2px dashed #343434;
+    background-color: beige;
+}
+
+.logout-button {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: lightcoral;
+}
+
+.chat-title {
+    text-align: center;
+}
+
+.chat-main {
+    height: calc(100% - 8rem);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "users messages"
+                         "users form";
+    background-color: aliceblue;
+}
+
+.users {
+    grid-area: users;
+    width: 12rem;
+    padding: 2rem 1rem;
+    background-color: bisque;
+}
+
+.users-title {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    color: blueviolet;
+}
+
+.users-list {
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.username {
+    padding: 0.25rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.messages {
+    grid-area: messages;
+    padding: 1rem 0;
+    overflow: auto;
+}
+
+.message {
+    margin: 1rem 2rem;
+}
+
+.message-username {
+    margin-right: 0.5rem;
+}
+
+.message-text {
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.chat-form {
+    grid-area: form;
+    height: 6rem;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #343434;
+}
+
+.chat-label {
+    grid-column: span 9;
+    margin: auto 0;
+    padding: 0 2rem;
+}
+
+.chat-label .label-input {
+    width: 100%;
+}
+
+.chat-button {
+    grid-column: 11 / span 1;
+    display: inline-block;
+    width: 6rem;
+    margin: auto 0;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: lightblue;
+}
+
+.chat-form .error {
+    grid-column: span 12;
+    padding: 0 2rem;
+}
+
+
+
+
