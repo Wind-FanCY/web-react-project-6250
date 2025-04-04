@@ -1,0 +1,82 @@
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #343434;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 4px #343434;
+  background-color: aliceblue;
+}
+
+.form-title {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  margin: 1rem 0;
+}
+
+.label-name {
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.label-input {
+  padding: 0.25rem 0.5rem;
+}
+
+.login-button {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  background-color: lightgreen;
+}
+
+.error {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: red;
+}
+
+.main {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border: 2px dashed #343434;
+  border-radius: 1rem;
+  background-color: aliceblue;
+}
+
+.logout-button {
+  grid-column: span 2;
+  grid-row: span 1;
+  padding: 0.5rem 1rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  background-color: lightcoral;
+}
+
+.main-title {
+  grid-column: span 12;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.main-message {
+  grid-column: span 12;
+  margin: 2rem 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+  color: blueviolet;
+}
