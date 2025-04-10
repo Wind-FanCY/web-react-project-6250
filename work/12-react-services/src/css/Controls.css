@@ -1,0 +1,12 @@
+.controls {
+    grid-column: span 12;
+    border-bottom: 1px solid #343434;
+    background-color: antiquewhite;
+}
+
+.logout-button {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: lightcoral;
+}
