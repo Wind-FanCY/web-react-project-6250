@@ -1,0 +1,17 @@
+.word {
+    padding: 1rem 0;
+}
+
+.word-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-button {
+    padding: 0.5rem 1rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    background-color: lightblue;
+}

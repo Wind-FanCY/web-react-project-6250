@@ -1,0 +1,17 @@
+.word-waiting {
+    font-size: large;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.panel-word {
+    margin: 2rem 0;
+    font-size: large;
+    
+    font-weight: 700;
+}
+
+.word-stored {
+    font-style: italic;
+    color: blueviolet;
+}

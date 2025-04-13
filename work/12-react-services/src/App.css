@@ -1,0 +1,35 @@
+.app {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.login-waiting {
+    font-size: large;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr;
+}
+
+.content-panel {
+    grid-column: span 12;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.panel-title {
+    margin: 3rem 0;
+}
